@@ -6,7 +6,6 @@ public class App {
 
 	public static void main(String[] args) {
 		Deck deck = new Deck();
-		System.out.println(deck);
 		Player playerOne = new Player("Sam");
 		Player playerTwo = new Player("Jack");
 		deck.shuffle();
@@ -42,17 +41,21 @@ public class App {
 	    }
 		
 		if(playerOne.getScore()> playerTwo.getScore()) {
-			System.out.println(playerOne.getName());
-			System.out.println(playerOne.getScore());
+			System.out.println("Winner: " + playerOne.getName());
+			System.out.println("Player One Score: " + playerOne.getScore());
+			System.out.println("Player Two Score: " + playerTwo.getScore());
 			
 		}
 		else if(playerOne.getScore()< playerTwo.getScore()) {
-			System.out.println(playerTwo.getName());
-			System.out.println(playerTwo.getScore());
+			System.out.println("Winner: " + playerTwo.getName());
+			System.out.println("Player One Score: " + playerOne.getScore());
+			System.out.println("Player Two Score: " + playerTwo.getScore());
 		}
 		else
 		{
 			System.out.println("Draw");
+			System.out.println("Player One Score: " + playerOne.getScore());
+			System.out.println("Player Two Score: " + playerTwo.getScore());
 		}
 			
 

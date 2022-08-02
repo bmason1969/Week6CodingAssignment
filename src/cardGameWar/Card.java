@@ -13,7 +13,8 @@ public class Card {
 	
 	
 	public Card(String name, int value) {
-		
+		this.name = name;
+		this.value = value;
 	}
 	
 
